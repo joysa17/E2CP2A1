@@ -39,6 +39,13 @@
 
 		ul{
 			list-style-type: none;
+			margin: 0;
+            padding: 0;
+		}
+		li {
+    	 display: inline;
+    	 color: #ffffff;
+    	 padding: 20px;
 		}
 		
 		.boton1{
@@ -50,23 +57,69 @@
 		    background-color: #1883ba;
 		    border-radius: 6px;
 	    }
+	    .boton2{
+		    text-decoration: none;
+		    padding: 10px;
+		    font-weight: 600;
+		    font-size: 20px;
+		    color: #ffffff;
+		    background-color: #1883ba;
+		    border-radius: 6px;
+		    position: absolute; 
+		    left: 500px; 
+		    top: 300px;
+	    }
+	    .boton3{
+		    text-decoration: none;
+		    padding: 10px;
+		    font-weight: 600;
+		    font-size: 20px;
+		    color: #ffffff;
+		    background-color: #35A53C;
+		    border-radius: 6px;
+		    position: absolute; 
+		    left: 650px; 
+		    top: 300px;
+	    }
+
+	    h1{
+	    	position: absolute;
+			top: 200px;
+			left: 0;
+			width: 100%;
+			color: #ffffff;
+
+	    }
+        .cabecera{
+        	background-image: url("images/bg.jpeg");
+        }
+
+        #pcabecera{
+        	color: #ffffff;
+        	position: absolute; 
+		    left: 200px; 
+		    top: 350px;
+        }
 
 	</style>
 </head>
 <body>
-<div class="menu">
+
+<div class="cabecera">
 <ul align="right">
 	<li>Equipo</li>
 	<li>Blog</li>
 	<li>Contacto</li>
 </ul>
-	
-</div>
+<center>
+	<h1>COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</h1>
 
-<div class="cabecera">
-<center><h1>COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</h1>
-	</center>
-	<img src="images/bg.jpeg" height="400px" width="100%">
+	<img src="images/latam_logo.png" width="200px" align="left">
+</center>
+
+<a class="boton2" href="https://www.desafiolatam.com">Comienza acá!</a>
+<a class="boton3" href="https://www.desafiolatam.com">Más info</a>
+<p id=pcabecera>Hay una escasez gigante de desarrolladores en el mundo y más aún en latinoamérica. Se necesitan más desarrolladores y TÚ puedes ser uno! </p>
 </div>
 
 <div class="contenido">
@@ -95,6 +148,13 @@
 	Desafio Latam
 	<br>Ezequias Allende 2361
 	<br>P: +56 9 5117 7975
+	<br>inscripciones@desafiolatam.com
+	</p>
+	
+		<p id="suscribete">Suscribete
+		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<input type="text" name="email">
+		<input type="submit" value="Enviar" />
 	</p>
 </div>
 <div class="footer">
