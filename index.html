@@ -4,9 +4,31 @@
 	<title>Landing</title>
 	<style type="text/css">
 		.cabecera{
-			height: 400px;
-			padding: 30px 0 30px 0;
+        	background-image: url("images/bg.jpeg");
+        	height: 400px;
+			padding: 30px 0 30px 0; 
+        }
+        .contenido{
+         	height: 400px;
+		   
+        }
+		.informacion{
+			text-align: center;
+			height: 250px;
+			background-color: #DDE5DE;
+			height: 200px;
+		}
+		.contacto{
+			text-align: center;
+			height: 250px;
+		}
 
+        .footer{
+			background-color: black;
+			height: 50px;
+			color: #ffffff;
+			padding-top: 20px;
+			padding-left: 80px;
 		}
 		#h3{
 			position: absolute;
@@ -24,18 +46,8 @@
 			width: 99%;
 			color: black;
 			font-family: 'Muli', sans-serif;
-
 		}
-		.footer{
-			background-color: black;
-			height: 50px;
-			color: #ffffff;
-			padding-top: 20px;
-			padding-left: 80px;
-		}
-		.informacion{
-			text-align: center;
-		}
+			
 
 		ul{
 			list-style-type: none;
@@ -90,10 +102,7 @@
 			color: #ffffff;
 
 	    }
-        .cabecera{
-        	background-image: url("images/bg.jpeg");
-        }
-
+        
         #pcabecera{
         	color: #ffffff;
         	position: absolute; 
@@ -101,11 +110,40 @@
 		    top: 350px;
         }
 
+        #suscribete{
+        	position: absolute; 
+		    left: 700px; 
+		    top: 1200px;
+        }
+        #suscribete1{
+        	position: absolute; 
+		    left: 750px; 
+		    top: 1280px;
+        }
+        #suscribete2{
+        	position: absolute; 
+		    left: 880px; 
+		    top: 1280px;
+        }
+        #pcontacto{
+        	position: absolute; 
+		    left: 300px; 
+		    top: 1200px;
+        }
+        .clearfix{
+        	clear: both;
+        }
+        #imghappy{
+        	position: absolute; 
+		    left: 500px; 
+		    top: 600px;
+        }
+
 	</style>
 </head>
 <body>
 
-<div class="cabecera">
+<div class="cabecera" >
 <ul align="right">
 	<li>Equipo</li>
 	<li>Blog</li>
@@ -121,29 +159,33 @@
 <a class="boton3" href="https://www.desafiolatam.com">Más info</a>
 <p id=pcabecera>Hay una escasez gigante de desarrolladores en el mundo y más aún en latinoamérica. Se necesitan más desarrolladores y TÚ puedes ser uno! </p>
 </div>
-
+<div clearfix>
+	
+</div>
 <div class="contenido">
 	<h3 id="h3" align="center">EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h3>
 	<p id="cont" align="center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. </p>
-	<center>
-		<img src="images/viewing-gallery-for-happy-people.png" height="300px">
-	</center>
+	 
+		<img src="images/viewing-gallery-for-happy-people.png" height="250px" id="imghappy">
+	 
 </div>
 
-<div class="información">
-	<center><p>SOLICITA INFORMACIÓN E INSCRÍBETE
-	<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua.  
-	<br>
-	<br>
-	<br><a class="boton1" href="https://www.desafiolatam.com">Inscríbete</a>
-	<br>
-	<br>Vive la experiencia Desafio Latam!
-	</p></center>
+<div class="informacion">
+	<center>
+		<p>SOLICITA INFORMACIÓN E INSCRÍBETE
+		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.  
+		<br>
+		<br>
+		<br><a class="boton1" href="https://www.desafiolatam.com">Inscríbete</a>
+		<br>
+		<br>Vive la experiencia Desafio Latam!
+		</p>
+	</center>
 </div>
 <div class="contacto">
-	<p>Contacto
+	<p id="pcontacto">Contacto
 	<br>
 	Desafio Latam
 	<br>Ezequias Allende 2361
@@ -151,10 +193,10 @@
 	<br>inscripciones@desafiolatam.com
 	</p>
 	
-		<p id="suscribete">Suscribete
+	<p id="suscribete">Suscribete
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		<input type="text" name="email">
-		<input type="submit" value="Enviar" />
+		<input type="text" name="email" id="suscribete1"/>
+		<input type="submit" value="Enviar" id="suscribete2" />
 	</p>
 </div>
 <div class="footer">
